@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root,
+[data-energy-mode="high"] {
+  --bg-canvas: #F5F2EB;
+  --bg-canvas-oklch: oklch(0.96 0.012 85);
+  --bg-surface: #FCFBF8;
+  --bg-surface-oklch: oklch(0.99 0.006 85);
+  --bg-elevated: #EFECE4;
+  --text-primary: #18201B;
+  --text-primary-oklch: oklch(0.23 0.020 150);
+  --text-muted: #525D55;
+  --text-muted-oklch: oklch(0.46 0.020 150);
+  --accent-primary: #3D7A5A;
+  --accent-sage: oklch(0.52 0.085 152);
+  --accent-amber: #D98A3C;
+  --accent-amber-oklch: oklch(0.68 0.125 65);
+  --accent-clay: #C86D51;
+  --accent-clay-oklch: oklch(0.62 0.110 38);
+  --border-subtle: #E2DDD3;
+  --font-softness: 0;
+}
+
+[data-energy-mode="balanced"] {
+  --bg-canvas: #ECE7DF;
+  --bg-canvas-oklch: oklch(0.93 0.015 82);
+  --bg-surface: #F7F4EE;
+  --bg-surface-oklch: oklch(0.97 0.008 82);
+  --bg-elevated: #E4DECFE6;
+  --text-primary: #1D241F;
+  --text-primary-oklch: oklch(0.25 0.018 150);
+  --text-muted: #58625B;
+  --text-muted-oklch: oklch(0.48 0.018 150);
+  --accent-primary: #46735B;
+  --accent-sage: oklch(0.50 0.065 152);
+  --accent-amber: #CC8642;
+  --accent-amber-oklch: oklch(0.66 0.105 65);
+  --accent-clay: #BA6B54;
+  --accent-clay-oklch: oklch(0.60 0.090 38);
+  --border-subtle: #DCD5C9;
+  --font-softness: 50;
+}
+
+[data-energy-mode="survival"],
+[data-energy-mode="recharge"] {
+  --bg-canvas: #161916;
+  --bg-canvas-oklch: oklch(0.21 0.012 145);
+  --bg-surface: #212521;
+  --bg-surface-oklch: oklch(0.26 0.014 145);
+  --bg-elevated: #2A302A;
+  --text-primary: #DBD5C9;
+  --text-primary-oklch: oklch(0.87 0.015 85);
+  --text-muted: #9E988E;
+  --text-muted-oklch: oklch(0.68 0.015 85);
+  --accent-primary: #79A88D;
+  --accent-sage: oklch(0.68 0.070 152);
+  --accent-amber: #DFA055;
+  --accent-amber-oklch: oklch(0.72 0.110 68);
+  --accent-clay: #D48A73;
+  --accent-clay-oklch: oklch(0.70 0.085 40);
+  --border-subtle: #2F352F;
+  --font-softness: 100;
+}
+
+.font-display {
+  font-family: 'Fraunces', Georgia, serif;
+  font-variation-settings: "SOFT" var(--font-softness), "WONK" 0;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
